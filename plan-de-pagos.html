@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Calculadora de Préstamos</title>
 </head>
 <body>
-<h1>Plan de Pago</h1>
-<p>Detalles sobre el plan de pago aquí.</p>
+    <h1>Calculadora de Préstamos</h1>
+    <form action="procesar.php" method="post">
+        <table>
+            <tr>
+                <td>Cuota Inicial:</td>
+                <td><input type="text" name="cuota_inicial"></td>
+            </tr>
+            <tr>
+                <td>Número de Años:</td>
+                <td><input type="text" name="num_anios"></td>
+            </tr>
+            <tr>
+                <td>Frecuencia de Pago:</td>
+                <td><input type="text" name="frecuencia_pago"></td>
+            </tr>
+            <tr>
+                <td>Número de Días por Año:</td>
+                <td><input type="text" name="num_dias_anio"></td>
+            </tr>
+            <!-- Aquí puedes seguir añadiendo más campos -->
+        </table>
+        <input type="submit" value="Calcular">
+    </form>
 </body>
 </html>
