@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Metodo Francés Credito Vehicular</title>
+    <title>Método Francés Crédito Vehicular</title>
+    <style>
+        .caja {
+            position: relative;
+            left: 600px;
+            top: -370px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Metodo Francés Credito Vehicular</h1>
+    <h1>Método Francés Crédito Vehicular</h1>
     <form action="procesar.php" method="post">
         <table>
             <tr>
@@ -64,7 +71,29 @@
                 <td><input type="text" name="seguro_riesgo_anual"></td>
             </tr>
         </table>
+        <div class="caja">
+            <p>Saldo a Financiar: <span id="saldo_a_financiar"></span></p>
+        </div>
+        <div class="caja">
+            <p>Monto del préstamo: <span id="monto_prestamo"></span></p>
+        </div>
+        <div class="caja">
+            <p>Nº Cuotas por Año: <span id="monto_prestamo"></span></p>
+        </div>
+        <div class="caja">
+            <p>Nº Total de Cuotas: <span id="monto_prestamo"></span></p>
+        </div>
+        <div class="caja">
+            <p>% de Seguro desgrav. per.: <span id="monto_prestamo"></span></p>
+        </div>
+        <div class="caja">
+            <p>Seguro riesgo: <span id="monto_prestamo"></span></p>
+        </div>
         <input type="submit" value="Calcular">
     </form>
 </body>
 </html>
+
+  
+  
+  
