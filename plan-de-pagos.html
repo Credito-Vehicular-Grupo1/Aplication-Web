@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Método Francés Crédito Vehicular</title>
+    <style>
+        .caja {
+            position: relative;
+            left: 600px;
+            top: -580px
+        }
+        h1 {
+            text-align: center;
+            color: rgb(238, 241, 243); 
+            font-size: 36px; 
+            text-transform: uppercase; 
+            margin-top: 20px; 
+            font-family: 'Lato', sans-serif;
+            background-color: #000000;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        
+
+    </style>
 </head>
 <body>
-<h1>Plan de Pago</h1>
-<p>Detalles sobre el plan de pago aquí.</p>
+    <h1>Método Francés Crédito Vehicular</h1>
+    <form action="procesar.php" method="post">
+        <table>
+            <tr>
+                <td>Cuota Inicial:</td>
+                <td><input type="text" name="cuota_inicial"></td>
+            </tr>
+            <tr>
+                <td>Número de Años:</td>
+                <td><input type="text" name="num_anios"></td>
+            </tr>
+            <tr>
+                <td>Frecuencia de Pago:</td>
+                <td><input type="text" name="frecuencia_pago"></td>
+            </tr>
+            <tr>
+                <td>Número de Días por Año:</td>
+                <td><input type="text" name="num_dias_anio"></td>
+            </tr>
+            <tr>
+                <td>Costes Notariales:</td>
+                <td><input type="text" name="costes_notariales"></td>
+            </tr>
+            <tr>
+                <td>Costes Registrales:</td>
+                <td><input type="text" name="costes_registrales"></td>
+            </tr>
+            <tr>
+                <td>Tasación:</td>
+                <td><input type="text" name="tasacion"></td>
+            </tr>
+            <tr>
+                <td>Comisión de estudio:</td>
+                <td><input type="text" name="comision_estudio"></td>
+            </tr>
+            <tr>
+                <td>Comisión activación:</td>
+                <td><input type="text" name="comision_activacion"></td>
+            </tr>
+            <tr>
+                <td>Comisión periódica:</td>
+                <td><input type="text" name="comision_periodica"></td>
+            </tr>
+            <tr>
+                <td>Portes:</td>
+                <td><input type="text" name="portes"></td>
+            </tr>
+            <tr>
+                <td>Gastos de Administración:</td>
+                <td><input type="text" name="gastos_administracion"></td>
+            </tr>
+            <tr>
+                <td>% de Seguro desgravamen mensual:</td>
+                <td><input type="text" name="seguro_desgravamen_mensual"></td>
+            </tr>
+            <tr>
+                <td>% de Seguro riesgo anual:</td>
+                <td><input type="text" name="seguro_riesgo_anual"></td>
+            </tr>
+        </table>
+        <div class="caja">
+            <p>Saldo a Financiar: <span id="saldo_a_financiar"></span></p>
+        </div>
+        <div class="caja">
+            <p>Monto del préstamo: <span id="monto_prestamo"></span></p>
+        </div>
+        <div class="caja">
+            <p>Nº Cuotas por Año: <span id="monto_prestamo"></span></p>
+        </div>
+        <div class="caja">
+            <p>Nº Total de Cuotas: <span id="monto_prestamo"></span></p>
+        </div>
+        <div class="caja">
+            <p>% de Seguro desgrav. per.: <span id="monto_prestamo"></span></p>
+        </div>
+        <div class="caja">
+            <p>Seguro riesgo: <span id="monto_prestamo"></span></p>
+        </div>
+        <input type="submit" value="Calcular">
+    </form>
 </body>
 </html>
+
+  
+  
+  
